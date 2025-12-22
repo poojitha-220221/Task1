@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,6 @@
             padding: 15px;
             font-weight: bold;
         }
-
         .map {
             flex-grow: 1;
             display: flex;
@@ -177,7 +176,299 @@
     </div>
 
 </body>
+</html> -->
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Shuttle Tracker UI</title>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color:#e8f3fd;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh; /* FIXED */
+        }
+
+        .sidebar {
+            width: 28%;
+            background-color: #ffffff;
+            border-right: 1px solid #cfd9e2;
+        }
+
+        .header {
+            background-color: #0b57d0;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .shuttle-list {
+            padding: 10px;
+        }
+
+        .shuttle {
+            padding: 12px;
+            border-bottom: 1px solid #f1f1f1;
+            cursor: pointer;
+        }
+
+        .shuttle:hover {
+            background-color: #f3f8ff;
+        }
+
+        .shuttle .name {
+            font-weight: bold;
+            color: #0b57d0;
+        }
+
+        .main {
+            width: 72%;
+            background-color: #f5f9ff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-header {
+            background-color: #0b57d0;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .map {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #666;
+            background-color: #d4e6ff;
+        }
+
+        .status-section {
+            background-color: white;
+            padding: 15px;
+            border-top: 1px solid #cfd9e2;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .status-box {
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: #f3f8ff;
+            width: 30%;
+            text-align: center;
+            border: 1px solid #d2e4ff;
+        }
+
+        .label {
+            font-size: 13px;
+            color: #888;
+        }
+
+        .value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0b57d0;
+        }
+
+        /* INTERNAL CSS TABLE */
+        .internal-table {
+            border: 2px solid green;
+            width: 50%;
+            text-align: center;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .internal-table td, .internal-table th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .internal-table th {
+            background-color: lightgreen;
+        }
+
+        section, table, h2 {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="main">
+        <h2>Route Map</h2>
+        <img src="RGUKT.jpeg" alt="Route map" width="300">
+    </section>
+
+    <section id="video-section">
+        <h2>Campus Intro Video</h2>
+        <video width="400" controls>
+            <source src="campus tour.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="audio-section">
+        <h2>Shuttle Announcement Audio</h2>
+        <audio controls>
+            <source src="bus-horn.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <section id="pdf">
+        <h2>Shuttle Route PDF</h2>
+        <iframe src="route-map.pdf" width="100%" height="500px"></iframe>
+    </section>
+    <h2>Shuttle Booking Form</h2>
+<form>
+    <label>Full Name:</label>
+    <input type="text" required><br><br>
+
+    <label>Select Shuttle:</label>
+    <select>
+        <option>Van 01</option>
+        <option>Bus 12</option>
+        <option>Mini Van 07</option>
+    </select><br><br>
+
+    <label>Pickup Location:</label>
+    <input type="text"><br><br>
+
+    <label>Time:</label>
+    <input type="time"><br><br>
+
+    <button type="submit">Book Now</button>
+</form>
+
+
+    <!-- INLINE CSS TABLE -->
+    <h2>Inline CSS Table</h2>
+    <table style="border:2px solid blue; width:50%; text-align:center;">
+        <tr style="background-color:lightblue;">
+            <th style="padding:8px;">Shuttle</th>
+            <th style="padding:8px;">Route</th>
+        </tr>
+        <tr>
+            <td style="padding:8px;">Van 01</td>
+            <td style="padding:8px;">N2</td>
+        </tr>
+        <tr>
+            <td style="padding:8px;">Bus 12</td>
+            <td style="padding:8px;">K4</td>
+        </tr>
+        <tr>
+            <td style="padding:8px;">Mini Van 07</td>
+            <td style="padding:8px;">I3</td>
+        </tr>
+    </table>
+
+    <!-- INTERNAL CSS TABLE -->
+    <h2>Internal CSS Table</h2>
+    <table class="internal-table">
+        <tr>
+            <th>Shuttle</th>
+            <th>Route</th>
+        </tr>
+        <tr>
+            <td>Campus Express</td>
+            <td>Gate</td>
+        </tr>
+        <tr>
+            <td>Van 01</td>
+            <td>N2</td>
+        </tr>
+        <tr>
+            <td>Bus 12</td>
+            <td>K4</td>
+        </tr>
+    </table>
+
+    <!-- EXTERNAL CSS TABLE -->
+    <h2>External CSS Table</h2>
+    <table class="external-table">
+        <tr>
+            <th>Shuttle</th>
+            <th>Route</th>
+        </tr>
+        <tr>
+            <td>Mini Van 07</td>
+            <td>I3</td>
+        </tr>
+        <tr>
+            <td>Shuttle 15</td>
+            <td>P2</td>
+        </tr>
+        <tr>
+            <td>Bus 05</td>
+            <td>B1</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">Shuttles</div>
+            <div class="shuttle-list">
+                <div class="shuttle">
+                    <span class="name">Van 01</span>
+                    <span>Route N2</span>
+                </div>
+                <div class="shuttle">
+                    <span class="name">Bus 12</span>
+                    <span>Route K4</span>
+                </div>
+                <div class="shuttle">
+                    <span class="name">Mini Van 07</span>
+                    <span>Route I3</span>
+                </div>
+                <div class="shuttle">
+                    <span class="name">Campus Express</span>
+                    <span>Route Gate</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="map-header">Tracking: Van 01</div>
+            <div class="map">Map Preview Area</div>
+            <div class="status-section">
+                <div class="status-box">
+                    <div class="label">Current Stop</div>
+                    <div class="value">Library</div>
+                </div>
+                <div class="status-box">
+                    <div class="label">Next Stop</div>
+                    <div class="value">Academic Block</div>
+                </div>
+                <div class="status-box">
+                    <div class="label">ETA</div>
+                    <div class="value">8 min</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
 
-
-                
+            
