@@ -1,0 +1,17 @@
+.external-table {
+    width: 50%;
+    text-align: center;
+    border: 2px solid red;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.external-table th, .external-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.external-table th {
+    background-color: pink;
+}
+
