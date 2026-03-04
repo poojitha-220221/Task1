@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Shuttle Tracker UI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="main">
+        <h2>Route Map</h2>
+         <img src="RGUKT.jpeg" alt="Route map" class="route-img">
+
+    </section>
+
+    <section id="video-section">
+        <h2>Campus Intro Video</h2>
+       <video controls class="media">
+    <source src="campus tour.mp4" type="video/mp4">
+</video>
+
+    </section>
+
+    <section id="audio-section">
+        <h2>Shuttle Announcement Audio</h2>
+        <audio controls>
+    <source src="bus-horn.mp3" type="audio/mp3">
+</audio>
+
+    </section>
+
+    <section id="pdf">
+        <h2>Shuttle Route PDF</h2>
+       <iframe src="route-map.pdf" width="100%" height="500px"></iframe>
+
+    </section>
+
+    <h2>Shuttle Booking Form</h2>
+    <form class="booking-form">
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Select Shuttle</label>
+        <select>
+            <option>Van 01</option>
+            <option>Bus 12</option>
+            <option>Mini Van 07</option>
+        </select>
+
+        <label>Pickup Location</label>
+        <input type="text">
+
+        <label>Time</label>
+        <input type="time">
+
+        <button type="submit" class="primary-btn">Book Now</button>
+    </form>
+
+    <h2>Shuttle Details Table</h2>
+    <table class="external-table">
+        <tr>
+            <th>Shuttle</th>
+            <th>Route</th>
+        </tr>
+        <tr>
+            <td>Van 01</td>
+            <td>N2</td>
+        </tr>
+        <tr>
+            <td>Bus 12</td>
+            <td>K4</td>
+        </tr>
+        <tr>
+            <td>Mini Van 07</td>
+            <td>I3</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">Shuttles</div>
+            <div class="shuttle-list">
+                <div class="shuttle">
+                    <span class="name">Van 01</span>
+                    <span>Route N2</span>
+                </div>
+                <div class="shuttle">
+                    <span class="name">Bus 12</span>
+                    <span>Route K4</span>
+                </div>
+                <div class="shuttle">
+                    <span class="name">Mini Van 07</span>
+                    <span>Route I3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="map-header">Tracking: Van 01</div>
+            <div class="map">
+    <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.7123549079765!2d80.81824077422276!3d16.790980583998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675e53fa3b4fb%3A0xfd1e193c90e4643!2sRajiv%20Gandhi%20University%20of%20Knowledge%20and%20Technology%20%2C%20Nuzvid!5e0!3m2!1sen!2sin!4v1766844710887!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+
+            <div class="status-section">
+                <div class="status-box">
+                    <div class="label">Current Stop</div>
+                    <div class="value">Library</div>
+                </div>
+                <div class="status-box">
+                    <div class="label">Next Stop</div>
+                    <div class="value">Academic Block</div>
+                </div>
+                <div class="status-box">
+                    <div class="label">ETA</div>
+                    <div class="value">8 min</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> 
+
+
+

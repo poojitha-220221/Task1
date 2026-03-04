@@ -1,0 +1,226 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e5ddd5;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: #fff;
+            border-right: 1px solid #ccc;
+        }
+
+        .header {
+            background-color: #075e54;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .chat-list {
+            padding: 10px;
+        }
+
+        .chat {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+        }
+
+        .chat:hover {
+            background-color: #f7f7f7;
+        }
+
+        .chat span {
+            display: block;
+        }
+
+        .chat .name {
+            font-weight: bold;
+        }
+
+        .main {
+            width: 70%;
+            background-color: #ece5dd;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .chat-header {
+            background-color: #075e54;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .messages {
+            padding: 20px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .msg {
+            background-color: #fff;
+            padding: 10px 15px;
+            margin: 10px 0;
+            width: fit-content;
+            border-radius: 8px;
+        }
+
+        .sent {
+            background-color: #dcf8c6;
+            margin-left: auto;
+        }
+
+        .input {
+            background-color: #fff;
+            padding: 15px;
+            border-top: 1px solid #ccc;
+        }
+
+        .fake-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">My Chats</div>
+            <div class="chat-list">
+                <div class="chat">
+                    <span class="name">Friend 1</span>
+                    <span class="preview">Hey! How are you?</span>
+                </div>
+                <div class="chat">
+                    <span class="name">Friend 2</span>
+                    <span class="preview">Let's meet today</span>
+                </div>
+                <div class="chat">
+                    <span class="name">Mom</span>
+                    <span class="preview">Come home early</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="chat-header">Friend 1</div>
+
+            <div class="messages">
+                <div class="msg">Hi!</div>
+                <div class="msg sent">Hello! How are you?</div>
+                <div class="msg">I am good </div>
+            </div>
+
+            <div class="input">
+                <div class="fake-input">Type a message...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Campus Shuttle UI</title>
+<style>
+body {
+    background-color: lightblue;
+    font-family: Arial;
+    margin: 0;
+}
+
+.left {
+    width: 30%;
+    background: white;
+    float: left;
+    border-right: 1px solid black;
+    height: 100vh;
+}
+
+.right {
+    width: 70%;
+    float: left;
+    background: lightgray;
+    height: 100vh;
+}
+
+.header {
+    background: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.box {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.map {
+    background: white;
+    height: 70%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.info {
+    background: white;
+    height: 30%;
+    padding: 10px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="left">
+    <div class="header">Shuttles</div>
+    <div class="box">Van 1 - Route k4</div>
+    <div class="box">Bus 2 - Route I3</div>
+    <div class="box">Mini Van 3 - Route A2</div>
+</div>
+
+<div class="right">
+    <div class="header">Tracking Van 1</div>
+
+    <div class="map">
+        Map area
+    </div>
+
+    <div class="info">
+        Current Stop: Library <br><br>
+        Next Stop: Academic Block <br><br>
+        ETA: 10 min
+    </div>
+</div>
+
+</body>
+</html>

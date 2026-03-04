@@ -1,0 +1,185 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    color: black;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 28%;
+    background-color: white;
+    border-right: 1px solid lightgray;
+}
+
+/* Main Content */
+.main {
+    width: 72%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Headers */
+.header,
+.map-header {
+    background-color: royalblue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Shuttle List */
+.shuttle-list {
+    padding: 10px;
+}
+
+.shuttle {
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shuttle:hover {
+    background-color: lavender;
+}
+
+.name {
+    font-weight: bold;
+    color: royalblue;
+}
+
+/* Map Area */
+.map {
+    width: 100%;
+    height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Status Section */
+.status-section {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+
+.status-box {
+    width: 30%;
+    background-color: lavender;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.label {
+    font-size: 13px;
+    color: gray;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: bold;
+    color: royalblue;
+}
+
+/* Media */
+.route-img,
+.media {
+    width: 300px;
+    margin: 20px;
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 500px;
+}
+
+/* Booking Form */
+.booking-form {
+    margin: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+    border-color: royalblue;
+    outline: none;
+}
+
+.primary-btn {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: navy;
+}
+
+/* Table Styling */
+.external-table {
+    width: 50%;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+.external-table th,
+.external-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.external-table th {
+    background-color: lightblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main {
+        width: 100%;
+    }
+} /*
+
